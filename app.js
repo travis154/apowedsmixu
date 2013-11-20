@@ -32,7 +32,7 @@ app.post('/', function(req,res){
 	res.end();
 });
 app.get('/', function(req,res){
-	res.end(req.query['hub.challenge'];
+	res.end(req.query['hub.challenge']);
 });
 
 http.createServer(app).listen(app.get('port'), function(){
