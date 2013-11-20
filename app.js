@@ -28,7 +28,7 @@ if ('development' == app.get('env')) {
 }
 
 app.post('/', function(req,res){
-	console.log(req.body);
+	console.log(req.body.data);
 	res.end();
 });
 app.get('/', function(req,res){
