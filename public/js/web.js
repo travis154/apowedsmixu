@@ -1,5 +1,5 @@
 $(function(){
-	var socket = io.connect('localhost');
+	var socket = io.connect('apowedsmixu.iulogy.com');
 	socket.on('pic', function (data) {
 		$("#by").fadeOut();
 		$("#p").addClass("b");
