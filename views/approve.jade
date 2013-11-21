@@ -1,0 +1,21 @@
+doctype 5
+html
+	head
+		title APOWEDSMIXU
+		script(src="/js/jquery.js")
+		link(rel='stylesheet', href='/stylesheets/normalize.css')
+		link(rel='stylesheet', href='/stylesheets/style.css')
+		script
+			$(function(){
+				$('img').on('click', function(){
+					self = $(this);
+					var id = $(this).data().id;
+					$.get("/approve/" + id, function(){
+						self.fadeOut();
+					})
+				});
+			});
+	body
+		-each p in pics
+			div
+				img(src=p.lowpic, data-id=p._id)
