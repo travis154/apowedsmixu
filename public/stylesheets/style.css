@@ -16,3 +16,30 @@ img#back{
 	background: #000;
 }
 
+#p{
+	opacity:0;
+  -webkit-transition: all 200ms ease;
+  -webkit-transition-property: opacity, -webkit-transform;
+
+}
+#p.a{
+	opacity:1;
+}
+
+
+#p.b{
+opacity:0;
+-webkit-transform-origin:0 0;  
+ -webkit-transform: rotate(86deg);  
+}
+
+
+
+#by{
+	font-size:40px;
+	padding: 10px 15px;
+	background:white;
+	color:#666;
+	font-weight:bold;
+	margin-left:20px;
+}

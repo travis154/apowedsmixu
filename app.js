@@ -12,7 +12,7 @@ var express = require('express')
   , request = require('request')
   , mongoose = require('mongoose')
 
-db = mongoose.connect("localhost/apo");
+db = mongoose.connect("127.0.0.1/apo");
 
 var Schema = mongoose.Schema({
 	_id:'string',
